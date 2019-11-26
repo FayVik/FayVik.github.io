@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>ul</title>
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
@@ -14,23 +18,27 @@
           <div class="logo">iFlight</div>
           <ul class="">
             <li>How it works</li>
-            <li>Find my Flight</li>
+            <li>Find a Flight</li>
             <li>Login</li>
             <li class="active">Sign in</li>
           </ul>
         </nav>
 
-        <div>
+        <div class="hero-content">
           <h1>
             Find Flights Heading To Any Destination
           </h1>
-          <input type="text" placeholder="Enter A Destination" />
-          <button>Find Flight</button>
+          <div class="">
+            <i class="fa fa-plane"></i>
+            <input type="text" placeholder="Enter A Destination" />
+            <i class="fa fa-map-marker-alt"></i>
+            <button class="button">Find Flight</button>
+          </div>
           <div class="list">
-            <span>Abuja to Lagos</span>
-            <span>Uyo</span>
-            <span>Owerri to Lagos</span>
-            <span>Abuja to PH</span>
+            <button>Abuja to Lagos</button>
+            <button>Uyo</button>
+            <button>Owerri to Lagos</button>
+            <button>Abuja to PH</button>
             <span>...</span>
           </div>
         </div>
