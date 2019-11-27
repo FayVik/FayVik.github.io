@@ -98,7 +98,9 @@ body {
     border: none;
   }
 }
-
+.fa-bars {
+  display: none;
+}
 .list {
   margin-top: 20px;
   margin-left: 58px;
@@ -147,6 +149,45 @@ body {
       ul {
         justify-content: flex-end;
       }
+    }
+  }
+}
+@media screen and (max-width: 553px) {
+  .fa-bars {
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+  .col-7 {
+    nav {
+      display: block;
+      .logo {
+        width: 10%;
+      }
+      ul {
+        display: none;
+        li {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    h1 {
+      margin-left: 6px;
+    }
+    .fa-plane {
+      margin-left: 25px;
+    }
+    input {
+      width: 220px;
+      height: 50px;
+      margin-left: 6px;
+    }
+    .button {
+      width: 80px;
+      height: 50px;
     }
   }
 }

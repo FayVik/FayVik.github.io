@@ -22,6 +22,7 @@
             <li>Login</li>
             <li class="active">Sign in</li>
           </ul>
+          <i class="fa fa-bars"></i>
         </nav>
 
         <div class="hero-content">
@@ -45,5 +46,22 @@
       </div>
       <div class="col-5"></div>
     </div>
+    <script>
+      const navSlide = () => {
+        const icon = document.querySelector(".fa-bars");
+        const links = document.querySelector("ul");
+        let key = 1;
+        icon.addEventListener("click", () => {
+          if (key === 1) {
+            key = 0;
+            links.style.display = "block";
+          } else if (key === 0) {
+            key = 1;
+            links.style.display = "none";
+          }
+        });
+      };
+      navSlide();
+    </script>
   </body>
 </html>

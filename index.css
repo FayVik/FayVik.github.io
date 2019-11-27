@@ -125,6 +125,10 @@ body {
   border: none;
 }
 
+.fa-bars {
+  display: none;
+}
+
 .list {
   margin-top: 20px;
   margin-left: 58px;
@@ -193,6 +197,44 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 553px) {
+  .fa-bars {
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+  .col-7 nav {
+    display: block;
+  }
+  .col-7 nav .logo {
+    width: 10%;
+  }
+  .col-7 nav ul {
+    display: none;
+  }
+  .col-7 nav ul li {
+    margin-bottom: 15px;
+  }
+  .col-7 h1 {
+    margin-left: 6px;
+  }
+  .col-7 .fa-plane {
+    margin-left: 25px;
+  }
+  .col-7 input {
+    width: 220px;
+    height: 50px;
+    margin-left: 6px;
+  }
+  .col-7 .button {
+    width: 80px;
+    height: 50px;
   }
 }
 /*# sourceMappingURL=index.css.map */
